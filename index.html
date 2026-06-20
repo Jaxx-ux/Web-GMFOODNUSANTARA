@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM FOOD NUSANTARA | Warteg Digital Bebas Antre</title>
+    <meta name="description" content="Platform pemesanan makanan online khas warteg nusantara. Klik dan ambil langsung tanpa antre. Solusi praktis untuk Ojol, pekerja kantoran, dan mahasiswa.">
+    <meta name="keywords" content="GM Food Nusantara, Warteg Digital, Pesan Makanan Online, Nasi Rames, Kuliner Indonesia, Fast Track Ojol">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="css/GMFOOD.css">
+</head>
+<body>
+
+    <!-- 1. Header / Navbar Section -->
+    <header id="header">
+        <div class="container navbar">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    GM FOOD NUSANTARA
+                </a>
+                <img src="Assets/sertifikat halal.webp" alt="Sertifikat Halal" class="halal-badge" title="Makanan 100% Halal">
+            </div>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Tentang Kami</a>
+                <a href="#services" class="nav-link">Layanan</a>
+                <a href="#menu" class="nav-link">Menu Spesial</a>
+                <a href="#testimonials" class="nav-link">Testimoni</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="theme-toggle" aria-label="Ganti Mode Tema">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+                <button class="icon-btn" id="cart-toggle" aria-label="Buka Keranjang">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="icon-btn menu-toggle" id="mobile-menu-btn" aria-label="Buka Menu Navigasi">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">#1 Warteg Digital Nusantara</span>
+                    <h1>Nikmati Sajian Khas Nusantara,<br><span>Tanpa Perlu Antri!</span></h1>
+                    <p>Pilih menu favoritmu di GM Food Nusantara langsung dari genggaman. Pesan sekarang, makanan langsung siap diambil di jalur khusus atau diantar. Cepat, lezat, dan praktis!</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-accent"><i class="fa-solid fa-utensils"></i> Lihat Menu & Pesan</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-location-dot"></i> Lokasi Kami</a>
+                    </div>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <span>⏱️</span> Bebas Antre
+                        </div>
+                        <div class="benefit-item">
+                            <span>🍛</span> Menu Super Lengkap
+                        </div>
+                        <div class="benefit-item">
+                            <span>💸</span> Harga Khas Warteg
+                        </div>
+                        <div class="benefit-item">
+                            <span>📱</span> Pesan via HP
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1601389863721-20a055e0bcb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sajian Rames Nusantara GM Food">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <strong>10.000+</strong>
+                            <div style="font-size: 0.8rem; color: var(--text-light);">Pesanan digital selesai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-images fade-in">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Koki Memasak">
+                        <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Restoran Vibe Nusantara">
+                    </div>
+                    <div class="about-text fade-in">
+                        <span class="badge">Kisah Kami</span>
+                        <h2>Pioneering Warteg Modern Era Digital</h2>
+                        <p class="positioning">"Warteg Rasa Bintang Lima, Pelayanan Era Digital"</p>
+                        <p>GM Food Nusantara lahir dari kesadaran bahwa waktu istirahat Anda sangat berharga. Melihat antrean panjang yang melelahkan di jam makan siang—terutama bagi pengemudi Ojol yang dikejar target serta pekerja kantoran berwaktu terbatas—kami merancang konsep **Warteg Digital (Click & Collect)**.</p>
+                        <p>Kami menyajikan cita rasa resep turun-temurun khas nusantara dengan bahan berkualitas, dapur higienis, dan sistem pemesanan yang cepat agar Anda bisa menikmati hidangan favorit tanpa membuang waktu produktif.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-num">50+</span>
+                                <span class="stat-label">Varian Lauk</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">10K+</span>
+                                <span class="stat-label">Pesanan Selesai</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Rasa Nusantara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services / Features Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="badge">Layanan Kami</span>
+                    <h2>Kemudahan Untuk Anda</h2>
+                    <p>Kami menyediakan solusi cerdas untuk memotong waktu antre dan mempermudah transaksi kuliner harian Anda.</p>
+                </div>
+                <div class="services-grid fade-in">
+                    <!-- Feature 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h3>Pesan & Ambil (Click & Collect)</h3>
+                        <p>Pesan menu favoritmu lewat web, lalu ambil di gerai kami sesuai waktu pilihanmu tanpa mengantre.</p>
+                        <a href="#menu" class="service-link">Coba Sekarang <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h3>Katalog Menu Real-Time</h3>
+                        <p>Pantau langsung lauk pauk yang tersedia hari ini lewat web untuk memastikan porsi favoritmu tidak kehabisan.</p>
+                        <a href="#menu" class="service-link">Lihat Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-box-archive"></i></div>
+                        <h3>Pemesanan Catering Box</h3>
+                        <p>Layanan pesan box praktis dalam jumlah besar untuk keperluan rapat kantor, syukuran, atau event instansi.</p>
+                        <a href="#contact" class="service-link">Pesan Porsi Besar <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-qrcode"></i></div>
+                        <h3>Pembayaran Digital (QRIS)</h3>
+                        <p>Kami menerima e-wallet (Gopay, OVO, Dana) dan mobile banking via QRIS untuk mempercepat transaksi di kasir.</p>
+                        <a href="#faq" class="service-link">Info Pembayaran <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Feature 5 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                        <h3>Pesan Antar (Delivery Terbatas)</h3>
+                        <p>Bagi Anda yang sibuk, kami menyediakan layanan pengantaran langsung dalam radius operasional maksimal 2KM.</p>
+                        <a href="#faq" class="service-link">Cek Area Coverage <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Feature 6 -->
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Jalur Prioritas Ojol</h3>
+                        <p>Loket khusus (Fast Track) untuk pengemudi ojek online agar pesanan bisa langsung diambil tanpa hambatan.</p>
+                        <a href="#faq" class="service-link">Info Jalur Ojol <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Portfolio / Product Section (Menu Pilihan) -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="badge">Katalog Rasa</span>
+                    <h2>Menu Populer Warteg Modern</h2>
+                    <p>Pilih paket rames hemat atau lauk pauk khas nusantara berkualitas tinggi untuk santap siang Anda.</p>
+                </div>
+                
+                <div class="category-tabs fade-in">
+                    <div class="category-card active" data-filter="all">
+                        <i class="fa-solid fa-utensils"></i> Semua Menu
+                    </div>
+                    <div class="category-card" data-filter="paket">
+                        <i class="fa-solid fa-box"></i> Paket Rames & Box
+                    </div>
+                    <div class="category-card" data-filter="ala-carte">
+                        <i class="fa-solid fa-bowl-rice"></i> Lauk Ala Carte
+                    </div>
+                    <div class="category-card" data-filter="beverage">
+                        <i class="fa-solid fa-wine-glass"></i> Minuman Segar
+                    </div>
+                </div>
+
+                <div class="menu-controls fade-in">
+                    <p id="menu-result-text">Menampilkan semua menu</p>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-input" placeholder="Cari paket atau lauk nusantara favoritmu...">
+                    </div>
+                </div>
+
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Javascript will render item cards dynamically here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Testimonial Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="badge">Ulasan Pelanggan</span>
+                    <h2>Kisah Pelanggan Setia</h2>
+                    <p>Bukti kepuasan nyata dari mereka yang telah merasakan kecepatan dan kemudahan layanan warteg digital kami.</p>
+                </div>
+                
+                <div class="testimonials-grid fade-in">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p class="testimonial-text">"Semenjak GM Food ada websitenya, narik orderan jadi makin gacor. Tinggal klik-klik pesan buat makan siang sendiri, sampai lokasi tinggal ambil. Gak buang waktu ngantri panjang!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi Santoso" class="author-img">
+                            <div class="author-info">
+                                <h4>Budi Santoso</h4>
+                                <p>Mitra Driver Ojek Online (Ojol)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p class="testimonial-text">"Rasa wartegnya juara banget, tapi yang bikin salut pelayanannya. Tiap jam makan siang aku selalu pesan online dulu dari kantor, jalan ke gerai makanan udah tinggal bawa pulang."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siska" class="author-img">
+                            <div class="author-info">
+                                <h4>Siska Amelia</h4>
+                                <p>Karyawan Swasta SCBD</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <p class="testimonial-text">"Paket Rames Hemat-nya benar-benar menyelamatkan kantong akhir bulan anak kost. Lauk pauknya juga kelihatan jelas mana yang masih ada mana yang habis dari web."</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Andi" class="author-img">
+                            <div class="author-info">
+                                <h4>Andi Wijaya</h4>
+                                <p>Mahasiswa Universitas Negeri</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="badge">Tanya Jawab</span>
+                    <h2>Pertanyaan Umum (FAQ)</h2>
+                    <p>Temukan jawaban cepat atas pertanyaan seputar pemesanan dan layanan kami di bawah ini.</p>
+                </div>
+                
+                <div class="faq-container fade-in">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Bagaimana cara memesan makanan melalui website?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pilih menu favorit Anda di bagian 'Menu Spesial', lalu tambahkan ke keranjang. Buka keranjang belanja Anda dan klik checkout. Anda akan diarahkan ke form pemesanan untuk mengisi data pengambilan, lalu sistem akan membuat link WhatsApp yang berisi rangkuman pesanan untuk dikirimkan ke Admin. Tunjukkan bukti chat WA saat di kasir.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Apakah bisa bayar di tempat?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tentu saja! Kami menerima pembayaran tunai maupun QRIS (Gopay, OVO, Dana, LinkAja, serta Mobile Banking) saat Anda mengambil makanan di lokasi gerai kami.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Saya driver Ojol, apakah ada antrean khusus?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Ya! GM Food Nusantara menyediakan loket/jalur pengambilan khusus (Fast Track) untuk pesanan online agar driver ojol tidak perlu ikut mengantre di kasir reguler.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Apakah menerima pesanan antar (Delivery)?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Saat ini kami menerima pesan antar (delivery) langsung untuk radius maksimal 2KM dari gerai terdekat dengan biaya pengantaran flat, atau Anda bisa menggunakan layanan kurir pihak ketiga untuk pengambilan.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Berapa lama batas waktu pengambilan pesanan?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Pesanan Anda akan disiapkan dan ditahan di loket pengambilan hingga maksimal 1 jam setelah waktu pengambilan yang Anda tentukan di formulir pemesanan online.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 6 -->
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Apakah bisa pesan nasi kotak dalam jumlah banyak?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sangat bisa! Untuk pemesanan catering box dalam jumlah di atas 50 porsi, harap lakukan pemesanan minimal H-1 agar tim dapur kami dapat mempersiapkan kualitas hidangan secara maksimal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Call To Action (CTA) Section -->
+        <section id="promo" class="cta">
+            <div class="container">
+                <div class="cta-container fade-in">
+                    <h2>Lapar? Jangan Ditahan, Apalagi Harus Antri!</h2>
+                    <p>Waktu istirahat Anda sangat berharga. Pesan menu GM Food Nusantara sekarang dan rasakan kemudahan makan enak masakan rumahan tanpa ribet.</p>
+                    <div class="cta-buttons">
+                        <a href="#menu" class="btn btn-accent"><i class="fa-solid fa-cart-shopping"></i> Pesan Makanan Sekarang</a>
+                        <a href="https://wa.me/6281298765432" target="_blank" class="btn btn-outline" style="border-color: white; color: white;"><i class="fa-brands fa-whatsapp"></i> Hubungi Admin via WA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact Section (Form Pemesanan & Maps) -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="badge">Pesan Sekarang</span>
+                    <h2>Formulir & Lokasi</h2>
+                    <p>Silakan isi data diri Anda dan rincian pesanan. Sistem kami akan otomatis menyusun pesanan Anda ke WhatsApp Admin.</p>
+                </div>
+                
+                <div class="contact-layout fade-in">
+                    <!-- Form Card -->
+                    <div class="contact-card">
+                        <h3>Kirim Pesanan</h3>
+                        <form class="order-form" id="order-form">
+                            <div class="form-group">
+                                <label for="order-name">Nama Lengkap *</label>
+                                <input type="text" id="order-name" placeholder="Contoh: Budi Santoso" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-phone">Nomor WhatsApp *</label>
+                                <input type="tel" id="order-phone" placeholder="Contoh: 0812XXXXXXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-service">Pilihan Layanan *</label>
+                                <select id="order-service" required>
+                                    <option value="" disabled selected>Pilih Layanan</option>
+                                    <option value="Ambil di Tempat (Self-Pickup)">Ambil di Tempat (Self-Pickup)</option>
+                                    <option value="Pesan Antar (Radius < 2KM)">Pesan Antar (Radius &lt; 2KM)</option>
+                                    <option value="Catering Box / Jumlah Besar">Catering Box / Jumlah Besar</option>
+                                    <option value="Tanya Info Lainnya">Tanya Info Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-time">Waktu Pengambilan / Pengiriman *</label>
+                                <input type="datetime-local" id="order-time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-details">Rincian Pesanan (Opsional - Terisi otomatis dari Keranjang)</label>
+                                <textarea id="order-details" rows="5" placeholder="Contoh: Paket Rames Spesial 2 porsi, lauk ayam goreng & sayur lodeh, pedas."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;"><i class="fa-brands fa-whatsapp"></i> Kirim Pesanan (via WA)</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact & Map Info -->
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <h4>Hubungi Layanan Pelanggan</h4>
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <div>
+                                        <strong>WhatsApp CS</strong>
+                                        <p>+62 812-9876-5432</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <div>
+                                        <strong>E-mail Resmi</strong>
+                                        <p>halo@gmfoodnusantara.com</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div>
+                                        <strong>Lokasi Gerai</strong>
+                                        <p>Jl. Pahlawan No 123, Jakarta Selatan (Samping Kasir Fast Track Ojol)</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-box">
+                            <h4>Lokasi Google Maps</h4>
+                            <div class="map-wrapper">
+                                <!-- Embed google map pointing to South Jakarta -->
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.0392336335!2d106.77259461159828!3d-6.284146187979607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1c7bfdfc9af%3A0xd68be357e62a39a2!2sKec.%20Cilandak%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        GM FOOD
+                    </a>
+                    <p>Warteg digital pertama di Indonesia yang menyajikan kelezatan cita rasa masakan rumah nusantara secara modern, praktis, dan bebas antrean panjang.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#services">Layanan</a></li>
+                        <li><a href="#menu">Menu Spesial</a></li>
+                        <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Kategori Menu</h3>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Paket Rames</a></li>
+                        <li><a href="#menu">Lauk Ala Carte</a></li>
+                        <li><a href="#menu">Catering Box</a></li>
+                        <li><a href="#menu">Minuman Segar</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-title">Info Jam Buka</h3>
+                    <ul class="footer-links">
+                        <li style="color: #a2b0a0; font-size: 0.9rem;"><i class="fa-regular fa-clock" style="margin-right: 8px; color: var(--accent-color);"></i> Setiap Hari</li>
+                        <li style="color: #a2b0a0; font-size: 0.9rem; padding-left: 22px;">08.00 - 21.00 WIB</li>
+                        <li style="color: #a2b0a0; font-size: 0.9rem; margin-top: 10px;"><i class="fa-solid fa-bolt" style="margin-right: 8px; color: var(--accent-color);"></i> Jalur Khusus Ojol</li>
+                        <li style="color: #a2b0a0; font-size: 0.9rem; padding-left: 22px;">Prioritas Pengambilan</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 GM Food Nusantara. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sidebar Cart Navigation -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button class="close-cart" id="close-cart" aria-label="Tutup Keranjang"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by javascript -->
+            <div class="cart-empty-msg">Keranjang Anda masih kosong.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rp 0</span>
+            </div>
+            <button class="btn btn-primary" style="width: 100%;" onclick="checkout()"><i class="fa-solid fa-basket-shopping"></i> Checkout Sekarang</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification Anchor -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- JavaScript script -->
+    <script src="js/GMFOOD.js"></script>
+</body>
+</html>
